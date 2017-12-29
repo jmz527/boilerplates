@@ -46,12 +46,25 @@
 	––––––––––––––––––––––––––––––––––––––––––––––––––-->    
 		<script type="text/javascript" src="https://unpkg.com/react@15.4.2/dist/react.min.js"></script>
 		<script type="text/javascript" src="https://unpkg.com/react-dom@15.4.2/dist/react-dom.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/6.1.19/browser.min.js"></script>
+		<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/6.1.19/browser.min.js"></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+
 		<script type="text/babel">
 
+			var Hello = React.createClass({
+			  render: function() {
+			    return (     
+			       <div>
+			        <h1>Hello World</h1>
+			        <p>This is some text</p>
+			       </div>
+			    )
+			  }
+			});
+
 			ReactDOM.render(
-				<h1>Hello There!</h1>,
-				document.getElementById('root')
+			  <Hello name="World" />,
+			  document.getElementById('root')
 			);
 
 		</script>
