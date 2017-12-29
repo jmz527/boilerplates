@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+	<!-- Basic Page Needs
+	––––––––––––––––––––––––––––––––––––––––––––––––––-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="James Aaron Rutledge">
+	<title></title>
+	<!-- 
+			    __                      _____     _   _       _         
+			 __|  |___ _____ ___ ___   | __  |_ _| |_| |___ _| |___ ___ 
+			|  |  | .'|     | -_|_ -|  |    -| | |  _| | -_| . | . | -_|
+			|_____|__,|_|_|_|___|___|  |__|__|___|_| |_|___|___|_  |___|
+			                                                   |___|  
+
+		ASCII generator: http://patorjk.com/software/taag/#p=display&f=Rectangles&t=James%20Rutledge
+	-->
+
+	<!-- FONT
+	––––––––––––––––––––––––––––––––––––––––––––––––––-->
+
+
+	<!-- CSS
+	––––––––––––––––––––––––––––––––––––––––––––––––––-->
+	<link rel="stylesheet" type="text/css" href="src/css/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"> -->
+
+	<!-- Favicon
+	––––––––––––––––––––––––––––––––––––––––––––––––––-->
+	<!-- Uncomment when you have your favicon in place -->
+	<!-- <link rel="icon" href="src/img/favicon.ico"> -->
+
+	<body>
+
+	<!-- Primary Page Layout
+	––––––––––––––––––––––––––––––––––––––––––––––––––-->
+		<div id="root">If you see this text, something went wrong...</div>
+		
+	</body>
+
+	<!-- SCRIPTS
+	––––––––––––––––––––––––––––––––––––––––––––––––––-->    
+		<script type="text/javascript" src="https://unpkg.com/react@15.4.2/dist/react.min.js"></script>
+		<script type="text/javascript" src="https://unpkg.com/react-dom@15.4.2/dist/react-dom.min.js"></script>
+		<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/6.1.19/browser.min.js"></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+
+		<script type="text/babel">
+
+			var Hello = React.createClass({
+			  render: function() {
+			    return (     
+			       <div>
+			        <h1>Hello World</h1>
+			        <p>This is some text</p>
+			       </div>
+			    )
+			  }
+			});
+
+			ReactDOM.render(
+			  <Hello name="World" />,
+			  document.getElementById('root')
+			);
+
+		</script>
+
+
+	<!-- End Document
+	––––––––––––––––––––––––––––––––––––––––––––––––––-->
+
+	</body>
+</html>
